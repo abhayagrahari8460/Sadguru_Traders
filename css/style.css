@@ -1,0 +1,335 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  width: 100%;
+  background-color: #fcf2e2;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 80px;
+    position: sticky;     
+  top: 0;               
+  z-index: 1000;  
+  font-size: x-large;      
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background: #f39c12;
+  border-radius: 4px;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  width: 40%;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.card img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.content {
+  padding: 20px;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+/* Footer Styles */
+footer {
+  background: #222;
+  color: #fff;
+  margin-top: 30px;
+  padding: 20px 10px 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  color: #f39c12;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #f39c12;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  font-size: 0.9em;
+}
+/* Customer Table Styles */
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  background: #fff;
+}
+
+.customer-table th, .customer-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.customer-table th {
+  background: #f39c12;
+  color: #fff;
+}
+
+.customer-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+.customer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  
+}
+
+.customer-card {
+  background: #fff;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: auto;
+  height: 10rem;
+}
+
+.customer-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+/* .customer-table{
+    margin: 20px;
+} */
+.cus-heading{
+    margin: 20px;
+}
+
+
+
+
+
+
+/* ---------------------------
+   Products Page Styles
+---------------------------- */
+.content {
+  text-align: center;      /* center content */
+  margin: 0 auto;
+  max-width: 1100px;       /* keeps text from stretching too wide */
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Optional: spacing between sections */
+.content h2 {
+  margin-top: 40px;
+  color: #444;
+}
+
+/* ---------------------------
+   Products Table Styles
+---------------------------- */
+.brand-product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.brand-product-table th,
+.brand-product-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0.95em;
+}
+
+.brand-product-table th {
+  background: #f39c12;  /* highlight color */
+  color: #fff;
+  font-weight: bold;
+}
+
+.brand-product-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.brand-product-table tr:hover {
+  background: #fce5b3;  /* light hover effect */
+  transition: 0.3s;
+}
+
+/* ---------------------------
+   Responsive Table (Mobile)
+---------------------------- */
+@media screen and (max-width: 768px) {
+  .brand-product-table {
+    display: block;
+    overflow-x: auto;   /* horizontal scroll */
+    white-space: nowrap;
+  }
+  
+  .brand-product-table th,
+  .brand-product-table td {
+    font-size: 0.85em;
+    padding: 8px 10px;
+  }
+}
+
+.con{
+  margin: 0 auto;
+  max-width: 1100px;       /* keeps text from stretching too wide */
+  padding: 20px;
+}
+
+
+
+.product-table {
+  width: 100%;
+  border-collapse: separate; /* allows spacing between cells */
+  border-spacing: 0 12px; /* vertical gap between rows */
+  font-family: 'Arial', sans-serif;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-table th {
+  background-color: #004aad; /* header background */
+  color: #fff;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.product-table td {
+  padding: 12px 15px;
+  background-color: #f9f9f9; /* light row background */
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.product-table tr td:first-child {
+  font-weight: 600;
+  color: #222;
+}
+
+.product-table tr:hover td {
+  background-color: #e6f0ff; /* hover effect */
+  transition: 0.3s;
+}
+
+.product-table tbody tr:last-child td {
+  border-bottom: none; /* remove last row border */
+}
+.product-table tbody tr:nth-child(even) td {
+  background-color: #f1f5f9;
+}
+
+
+
+
